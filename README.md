@@ -5,7 +5,7 @@
 Стек: React, Scss, Typescript
 
 ## Чтобы посмотреть вживую
-[Деплой на Netlify](https://633c5ba386c3f614cc9d35ac--quebecnova-car-calculator.netlify.app/)
+[Деплой на Netlify](https://quebecnova-car-calculator.netlify.app/)
 
 ## Чтобы запустить локально
 
