@@ -1,0 +1,105 @@
+@import '/src/scss/variables.scss';
+@import '/src/scss/typographyMixins.scss';
+
+.inputConvertedValue {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 68px;
+  width: 427px;
+  padding-left: 24px;
+  background-color: $inputTextField;
+  border: none;
+  border-radius: 16px;
+  color: $inputText;
+  @include h2;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input {
+  position: absolute;
+  width: 69px;
+  right: 24px;
+  color: $inputText;
+  border: none;
+  @include h2;
+}
+
+.inputInfo {
+  position: absolute;
+  right: 18px;
+  top: 32%;
+  z-index: 1;
+  color: $inputText;
+  @include h3;
+}
+
+.inputInBox {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  right: 7px;
+  background-color: $inputInfoInBox;
+  border-radius: 16px;
+  padding: 15px 17px;
+  @include h3;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.label {
+  @include label;
+  color: $inputText;
+}
+
+.input:focus {
+  outline: 2px solid $inputTextField;
+  background-color: $inputTextFieldActive;
+}
+
+.inputWithInfo {
+  position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+  .inputConvertedValue {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inputInBox {
+    height: 60px;
+  }
+  .inputInfo {
+    right: 13px;
+    top: 20%;
+    color: $gray1;
+    @include h2(22px);
+  }
+  .input,
+  .inputConvertedValue {
+    color: $gray1;
+    @include h2(22px);
+  }
+  .inputInBox {
+    top: 10px;
+    width: 67px;
+    height: 48px;
+  }
+}

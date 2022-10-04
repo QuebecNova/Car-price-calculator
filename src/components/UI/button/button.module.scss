@@ -1,0 +1,51 @@
+@import '/src/scss/variables.scss';
+@import '/src/scss/typographyMixins.scss';
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $button;
+  border-radius: 40px;
+  border: none;
+  color: $buttonText;
+  cursor: pointer;
+  @include h2;
+}
+
+.btn:hover {
+  background-color: $buttonHover;
+}
+
+.btn:active {
+  background-color: $buttonActive;
+}
+
+.btn:disabled {
+  cursor: default;
+  background-color: $buttonDisabled;
+}
+
+.btn__loading {
+  width: 3vh;
+  height: 3vh;
+  border: 3px solid $buttonLoader;
+  border-color: #fff #fff #fff transparent;
+  border-radius: 50%;
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    @include h2(22px);
+    max-width: calc(100vw - 22px);
+  }
+}

@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+@media screen and (max-height: 1000px) {
+  body {
+    height: auto;
+  }
+}

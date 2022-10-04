@@ -1,0 +1,89 @@
+@import '/src/scss/variables.scss';
+@import '/src/scss/typographyMixins.scss';
+
+.input {
+  box-sizing: border-box;
+  width: 427px;
+  height: 68px;
+  padding-left: 24px;
+  background-color: $inputTextField;
+  border: none;
+  border-radius: 16px;
+  color: $inputText;
+  @include h2;
+}
+
+.inputInfo {
+  position: absolute;
+  top: 20%;
+  right: 24px;
+  color: $inputText;
+  @include h2;
+}
+
+.inputInfoInBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  right: 7px;
+  background-color: $inputInfoInBox;
+  border-radius: 16px;
+  padding: 15px 17px;
+  @include h3;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.label {
+  @include label;
+  color: $inputText;
+}
+
+.input:focus {
+  outline: 2px solid $inputTextField;
+  background-color: $inputTextFieldActive;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputWithInfo {
+  position: relative;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    height: 60px;
+    width: 100%;
+  }
+  .inputInfo {
+    color: $gray1;
+    @include h2(22px);
+  }
+  .inputWrapper {
+    max-width: calc(100vw - 10px);
+  }
+  .input {
+    max-width: calc(100vw - 22px);
+    color: $gray1;
+    @include h2(22px);
+  }
+  .inputInfoInBox {
+    width: 67px;
+    height: 48px;
+  }
+}

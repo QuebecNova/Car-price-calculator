@@ -1,0 +1,27 @@
+@import '../assets/fonts/gilroy/stylesheet.scss';
+@import '../assets/fonts/nekst/stylesheet.scss';
+
+html,
+body {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+h1 {
+  font-family: 'Nekst-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+}
+
+h2 {
+  font-family: 'Nekst-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
