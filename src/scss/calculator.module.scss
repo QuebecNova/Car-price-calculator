@@ -20,7 +20,6 @@
 .inputs {
   position: absolute;
   display: flex;
-  gap: 32px;
   width: 100%;
   height: 119px;
   left: 47px;
@@ -130,10 +129,6 @@
     height: 96px;
     left: 20px;
     top: 200px;
-    gap: 16px;
-    div {
-      gap: 8px;
-    }
   }
   .sum {
     left: 20px;

@@ -8,6 +8,7 @@
   padding-left: 24px;
   background-color: $inputTextField;
   border: none;
+  margin-top: 24px;
   border-radius: 16px;
   color: $inputText;
   @include h2;
@@ -15,7 +16,7 @@
 
 .inputInfo {
   position: absolute;
-  top: 20%;
+  top: 40%;
   right: 24px;
   color: $inputText;
   @include h2;
@@ -52,7 +53,7 @@
 .inputWrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  margin-right: 32px;
 }
 
 .inputWithInfo {
@@ -68,14 +69,17 @@
 @media screen and (max-width: 768px) {
   .input {
     height: 60px;
-    width: 100%;
+    width: 280px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
   .inputInfo {
+    top: 25%;
     color: $gray1;
     @include h2(22px);
   }
   .inputWrapper {
-    max-width: calc(100vw - 10px);
+    width: 280px;
   }
   .input {
     max-width: calc(100vw - 22px);
@@ -85,5 +89,10 @@
   .inputInfoInBox {
     width: 67px;
     height: 48px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .inputWrapper {
+    max-width: calc(100vw - 10px);
   }
 }

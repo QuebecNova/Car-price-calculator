@@ -13,10 +13,17 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .combinedInput {
-    margin-bottom: 0;
-  }
   .combinedWithInput {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .combinedInput:first-of-type {
+    margin-top: 0;
+  }
+  .combinedInput {
+    margin-top: 16px;
+    margin-bottom: 0;
   }
 }

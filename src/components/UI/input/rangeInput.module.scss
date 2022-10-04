@@ -1,8 +1,10 @@
 @import '/src/scss/variables.scss';
 .rangeInput {
   height: 0px;
+  width: 85%;
   margin-top: -2px;
-  align-self: center;
+  margin-left: 15px;
+  align-self: flex-start;
   -webkit-appearance: none;
   z-index: 1;
 }
@@ -182,14 +184,22 @@
   background: #ff9514;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1024px) {
+@media screen and (max-width: 1440px) and (min-width: 768px) {
   .rangeInput {
     width: 90%;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .rangeInput {
+    width: 85%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .rangeInput {
+    margin-left: 18px;
     margin-top: -9px;
     margin-bottom: 12px;
   }

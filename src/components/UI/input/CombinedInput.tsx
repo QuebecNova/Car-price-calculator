@@ -27,7 +27,7 @@ export default function CombinedInput(props: Props) {
   return (
     <div className={classNames}>
       <Input
-        type='text'
+        type='number'
         result={props.result}
         infoInBox={props.infoInBox}
         disabled={props.disabled}

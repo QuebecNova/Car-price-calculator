@@ -8,6 +8,7 @@
   height: 68px;
   width: 427px;
   padding-left: 24px;
+  margin-top: 24px;
   background-color: $inputTextField;
   border: none;
   border-radius: 16px;
@@ -18,7 +19,6 @@
 .inputWrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
 
 .input {
@@ -33,7 +33,7 @@
 .inputInfo {
   position: absolute;
   right: 18px;
-  top: 32%;
+  top: 50%;
   z-index: 1;
   color: $inputText;
   @include h3;
@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 10%;
+  top: 33%;
   right: 7px;
   background-color: $inputInfoInBox;
   border-radius: 16px;
@@ -83,12 +83,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .inputInBox {
-    height: 60px;
-  }
   .inputInfo {
     right: 13px;
-    top: 20%;
+    top: 20px;
     color: $gray1;
     @include h2(22px);
   }
@@ -96,9 +93,13 @@
   .inputConvertedValue {
     color: $gray1;
     @include h2(22px);
+    width: 280px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 60px;
   }
   .inputInBox {
-    top: 10px;
+    top: 6px;
     width: 67px;
     height: 48px;
   }
