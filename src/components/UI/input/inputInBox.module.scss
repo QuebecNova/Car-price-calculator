@@ -2,8 +2,6 @@
 @import '/src/scss/typographyMixins.scss';
 
 .inputConvertedValue {
-  display: inline-block;
-  overflow: auto;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -19,7 +17,6 @@
 }
 
 .inputWrapper {
-  overflow: auto;
   display: flex;
   flex-direction: column;
 }
