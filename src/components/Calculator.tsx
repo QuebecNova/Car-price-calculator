@@ -35,6 +35,7 @@ export default function Calculator() {
   )
 
   async function handleSendData() {
+    if (isLoading) return
     setIsLoading(true)
 
     const data: IData = {
